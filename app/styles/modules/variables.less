@@ -15,10 +15,20 @@
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
+// Custom colors
+// -------------------------
+
+@green-main:            #00d3aa;
+@green-main-dark:       #007961	;
+@green-main-light:      #48d1ca;
+@red-light:             #ff625f;
+@gray-pavement:         #697781;
+@gray-storm:			#465866;
+
 // Brand colors
 // -------------------------
 
-@brand-primary:         #428bca;
+@brand-primary:         @green-main;
 @brand-success:         #5cb85c;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
@@ -27,7 +37,7 @@
 // Scaffolding
 // -------------------------
 
-@body-bg:               #fff;
+@body-bg:               #F7F5EF;
 @text-color:            @gray-dark;
 
 // Links
@@ -48,10 +58,10 @@
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
 @font-size-small:         ceil(@font-size-base * 0.85); // ~12px
 
-@font-size-h1:            floor(@font-size-base * 2.6); // ~36px
-@font-size-h2:            floor(@font-size-base * 2.15); // ~30px
-@font-size-h3:            ceil(@font-size-base * 1.7); // ~24px
-@font-size-h4:            ceil(@font-size-base * 1.25); // ~18px
+@font-size-h1:            floor(@font-size-base * 2.3); // ~36px
+@font-size-h2:            floor(@font-size-base * 1.7); // ~30px
+@font-size-h3:            ceil(@font-size-base * 1.4); // ~24px
+@font-size-h4:            ceil(@font-size-base * 1.1); // ~18px
 @font-size-h5:            @font-size-base;
 @font-size-h6:            ceil(@font-size-base * 0.85); // ~12px
 
