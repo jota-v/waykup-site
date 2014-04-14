@@ -2,32 +2,58 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Waykup</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-       
-        <!-- build:css(.tmp) styles/main.css -->
+
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
 
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
     </head>
     <body>
-        <div class="container tips">
-            <h1 class="tips-title">Tips & Tricks </h1>            
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-            <ol>
-                <li>You can search by either writing an address in the search field or by tapping anywhere on the map.</li>
-                <li>Double tap for zooming in the map is disabled. You can either "pinch to zoom" or you can activate the zoom controls in settings.</li>
-                <li>Set your way once you are already on the go, if you stand still for a period of time longer than 5 minutes iOS may terminate the geolocation process without any notice.</li>
-                <li>You can use Waykup while travelling by bus, train, car, boat or even walking, but it will NOT work underground! Also watch out for connection issues when going through a tunnel.</li>
-                <li>Keep your phone in a place with good signal, a pocket is a good option.</li>
-                <li>Save and share your favourite ways. You'll find the buttons to do so in the lower right side of the screen while travelling.</li>
-                <li>If you love Waykup, please take a minute and rate it in the App Store. It will be much appreciated</li>
-            </ol>
+        <header class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Waykup</a>
+                </div>
 
-            <h3 class="tips-end-title"><span>Waykup</span> it's the way to go</h3>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Download</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <section class="jumbotron main-marketing">
+                <div class="container">
+                    <h1>'Allo, 'Allo!</h1>
+                    <p class="lead">Always a pleasure scaffolding your apps.</p>
+                </div>
+            </section>
         </div>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -40,6 +66,26 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
-        
-    </body>
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/bootstrap/js/affix.js"></script>
+        <script src="bower_components/bootstrap/js/alert.js"></script>
+        <script src="bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="bower_components/bootstrap/js/modal.js"></script>
+        <script src="bower_components/bootstrap/js/transition.js"></script>
+        <script src="bower_components/bootstrap/js/button.js"></script>
+        <script src="bower_components/bootstrap/js/popover.js"></script>
+        <script src="bower_components/bootstrap/js/carousel.js"></script>
+        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="bower_components/bootstrap/js/collapse.js"></script>
+        <script src="bower_components/bootstrap/js/tab.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
 </html>

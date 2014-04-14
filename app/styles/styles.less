@@ -1,0 +1,46 @@
+
+body {
+	font-weight: @font-weight-base;
+}
+
+.main-bg {
+	position: fixed;
+	z-index: 0;
+	.size(100%,100%);
+	background: url('../images/bg-main.jpg') no-repeat;
+	background-position: center center;
+	background-size: cover;
+	filter: blur(2px);
+}
+
+.brand-logo {
+	.size(250px, 100px);
+	margin: 75px auto 0;
+	background: url('../images/waykup-logo.png') no-repeat;
+	background-size: 100% auto;
+	text-indent: -9999px;
+}
+
+.main-content-home {
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	padding-top: 50px;
+	z-index: 1;
+	background: rgba(0,211,170,.8);
+
+	.main-col {
+		text-align: center;
+	}
+
+	.appstore img {
+		display: block;
+		.size(220px, auto);
+		margin: 45px auto;
+	}
+
+	.iphone {
+		display: block;
+		margin: 0 auto;
+	}
+}

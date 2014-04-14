@@ -1,55 +1,46 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Waykup</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
         <!-- endbower -->
         <!-- endbuild -->
-        <!-- build:css(.tmp) styles/main.css -->
+        <!-- build:css styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
 
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
     </head>
     <body>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <section class="jumbotron">
-            <a href="#" class="logo">Waykup</a>
-        </section>
-        <section class="container tips">
-            <h1 class="tips-title">Tips & Tricks </h1>            
+        <span class="main-bg"></span>
+        <div class="main-content main-content-home">
+          <div class="container">
+            <div class="row">
+              <div class="main-col col-xs-12 col-sm-7 col-md-7">
+                <h1 class="brand-logo">Waykup</h1>
+                <h2>Get the most out of each daily trip</h2>
+                <p>With this simple and easy to use proximity alarm, you no longer need to worry about missing your stop!</p>
+                <a class="appstore" href="https://itunes.apple.com/us/app/waykup/id817714891?ls=1&mt=8" target="blank_"><img src="images/badge-appstore.png" alt="waykup appstore badge"></a>
+              </div>
+              <div class="col-xs-12 col-sm-5 col-md-5">
+                <img class="iphone" src="images/iphone.png" alt="Waykup Screen iphone">
+              </div>
+            </div>
+          </div>
 
-            <ol>
-                <li>You can search by either writing an address in the search field or by tapping anywhere on the map.</li>
-                <li>Double tap for zooming in the map is disabled. You can either "pinch to zoom" or you can activate the zoom controls in settings.</li>
-                <li>Set your way once you are already on the go, if you stand still for a period of time longer than 5 minutes iOS may terminate the geolocation process without any notice.</li>
-                <li>You can use Waykup while travelling by bus, train, car, boat or even walking, but it will NOT work underground! Also watch out for connection issues when going through a tunnel.</li>
-                <li>Keep your phone in a place with good signal, a pocket is a good option.</li>
-                <li>Save and share your favourite ways. You'll find the buttons to do so in the lower right side of the screen while travelling.</li>
-                <li>If you love Waykup, please take a minute and rate it in the App Store. It will be much appreciated</li>
-            </ol>
-
-            <h2 class="tips-end-title"><span>Waykup</span> it's the way to go</h2>
-        </section>
-
-
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="bower_components/jquery/jquery.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
+        </div>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -61,11 +52,9 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js scripts/plugins.js -->
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/js/affix.js"></script>
         <script src="bower_components/bootstrap/js/alert.js"></script>
         <script src="bower_components/bootstrap/js/dropdown.js"></script>
@@ -78,6 +67,11 @@
         <script src="bower_components/bootstrap/js/scrollspy.js"></script>
         <script src="bower_components/bootstrap/js/collapse.js"></script>
         <script src="bower_components/bootstrap/js/tab.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
 </html>
