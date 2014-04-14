@@ -23,6 +23,10 @@ body {
 
 	.home & {
 		margin-top: 75px;
+
+		@media (max-width: @screen-xs) {
+			margin-top: 10px;
+		}
 	}
 }
 
@@ -47,6 +51,21 @@ body {
 	.iphone {
 		display: block;
 		margin: 0 auto;
+
+		@media (max-width: @screen-sm-max) {
+			width: 100%;
+			margin-top: 80px;
+		}
+
+		@media (max-width: @screen-xs-max) {
+			width: auto;
+			margin-top: 0;
+		}
+
+		@media (max-width: @screen-xs) {
+			width: 75%;
+		}
+
 	}
 
 	.support-link {
@@ -65,26 +84,48 @@ body {
 
 	h1 {
 		margin-bottom: 40px;
+
+		@media (max-width: @screen-xs) {
+			font-size: 37px;
+		}
 	}
 
 	ul {
 		list-style-type: circle;
 		color: black;
+
+		@media (max-width: @screen-xs) {
+			padding: 0 0 0 25px;
+		}
 	}
 
 	li {
 		margin-bottom: 25px;
 		font-size: 19px;
+
+		@media (max-width: @screen-xs) {
+			font-size: 17px;
+		}
 	}
 
 	.contact {
 		margin: 40px 0 20px;
+		font-size: 19px;
 		text-align: center;
+
+		@media (max-width: @screen-xs) {
+			font-size: 17px;
+		}
 	}
 
 	.tips-end-title {
 		margin: 20px 0 90px;
 		text-align: center;
 		color: @green;
+
+		@media (max-width: @screen-xs) {
+			font-size: 22px;
+		}
+
 	}
 }
