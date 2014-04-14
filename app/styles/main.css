@@ -433,7 +433,7 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 54px;
+  font-size: 42px;
 }
 h2,
 .h2 {
@@ -441,11 +441,11 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 36px;
+  font-size: 30px;
 }
 h4,
 .h4 {
-  font-size: 27px;
+  font-size: 26px;
 }
 h5,
 .h5 {
@@ -5744,14 +5744,18 @@ body {
   filter: blur(2px);
 }
 .brand-logo {
+  display: block;
   width: 250px;
   height: 100px;
-  margin: 75px auto 0;
+  margin: 15px auto 0;
   background: url('../images/waykup-logo.png') no-repeat;
   background-size: 100% auto;
   text-indent: -9999px;
 }
-.main-content-home {
+.home .brand-logo {
+  margin-top: 75px;
+}
+.home {
   position: absolute;
   width: 100%;
   min-height: 100%;
@@ -5759,16 +5763,48 @@ body {
   z-index: 1;
   background: rgba(0, 211, 170, 0.8);
 }
-.main-content-home .main-col {
+.home .main-col {
   text-align: center;
 }
-.main-content-home .appstore img {
+.home .appstore img {
   display: block;
   width: 220px;
   height: auto;
-  margin: 45px auto;
+  margin: 45px auto 30px;
 }
-.main-content-home .iphone {
+.home .iphone {
   display: block;
   margin: 0 auto;
+}
+.home .support-link {
+  display: inline-block;
+  margin: 0 auto 45px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #197a6b;
+  text-transform: uppercase;
+  text-align: center;
+}
+.tips {
+  color: #555555;
+}
+.tips h1 {
+  margin-bottom: 40px;
+}
+.tips ul {
+  list-style-type: circle;
+  color: black;
+}
+.tips li {
+  margin-bottom: 25px;
+  font-size: 19px;
+}
+.tips .contact {
+  margin: 40px 0 20px;
+  text-align: center;
+}
+.tips .tips-end-title {
+  margin: 20px 0 90px;
+  text-align: center;
+  color: #00d3aa;
 }

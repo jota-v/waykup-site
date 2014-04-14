@@ -14,14 +14,19 @@ body {
 }
 
 .brand-logo {
+	display: block;
 	.size(250px, 100px);
-	margin: 75px auto 0;
+	margin: 15px auto 0;
 	background: url('../images/waykup-logo.png') no-repeat;
 	background-size: 100% auto;
 	text-indent: -9999px;
+
+	.home & {
+		margin-top: 75px;
+	}
 }
 
-.main-content-home {
+.home {
 	position: absolute;
 	width: 100%;
 	min-height: 100%;
@@ -36,11 +41,50 @@ body {
 	.appstore img {
 		display: block;
 		.size(220px, auto);
-		margin: 45px auto;
+		margin: 45px auto 30px;
 	}
 
 	.iphone {
 		display: block;
 		margin: 0 auto;
+	}
+
+	.support-link {
+		display: inline-block;
+		margin: 0 auto 45px;
+		font-size: 15px;
+		font-weight: 700;
+		color: #197a6b;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+
+.tips {
+	color: @gray;
+
+	h1 {
+		margin-bottom: 40px;
+	}
+
+	ul {
+		list-style-type: circle;
+		color: black;
+	}
+
+	li {
+		margin-bottom: 25px;
+		font-size: 19px;
+	}
+
+	.contact {
+		margin: 40px 0 20px;
+		text-align: center;
+	}
+
+	.tips-end-title {
+		margin: 20px 0 90px;
+		text-align: center;
+		color: @green;
 	}
 }
